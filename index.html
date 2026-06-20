@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {box-sizing: border-box; font-family: sans-serif;}
+    .responsive {padding: 0 6px; float: left; width: 24.99999%;}
+    .clearfix:after {content: ""; display: table; clear: both;}
+    @media only screen and (max-width: 700px) {.responsive {width: 49.99999%; margin: 5px 0;}}
+    @media only screen and (max-width: 500px) {.responsive {width: 100%; }}
+    div.gallery {border: 1px solid #ccc;}
+    div.gallery:hover {border: 1px solid #777;}
+    div.gallery img {width: 100%; height: auto;}
+    div.desc {padding: 15px; text-align: center;}
+  </style>
+  <title>Dumb Image Gallery</title>
+</head>
+
+<body>
+<h2>Dumb Image Gallery</h2>
+<h4>Foo Bar GraphiC DesigneR</h4>
+
+<!-- plik 1: "blue.png" -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="blue.png">
+      <img src="blue.png">
+    </a>
+    <div class="desc">blue.png</div>
+  </div>
+</div>
+
+<!-- plik 2: "orange.png" -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="orange.png">
+      <img src="orange.png">
+    </a>
+    <div class="desc">orange.png</div>
+  </div>
+</div>
+
+<!-- plik 3: "toxic.png" -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="toxic.png">
+      <img src="toxic.png">
+    </a>
+    <div class="desc">toxic.png</div>
+  </div>
+</div>
+
+<!-- plik 4: "yellow.png" -->
+<div class="responsive">
+  <div class="gallery">
+    <a target="_blank" href="yellow.png">
+      <img src="yellow.png">
+    </a>
+    <div class="desc">yellow.png</div>
+  </div>
+</div>
+
+<!-- kolejne pliki galerii ... -->
+
+<div class="clearfix"></div>
+</body>
+</html>
